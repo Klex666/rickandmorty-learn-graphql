@@ -15,7 +15,7 @@ const CharacterCard: React.FC<IDataAllCharacter> = ({ id, name, gender, image })
       <img className={styles.ImageCard} src={image} alt="ImageCharacter"></img>
       <p>{name}</p>
       <p>{gender}</p>
-      <div onClick={() => saveCurrentData({ id, name })}>
+      <div onMouseEnter={() => saveCurrentData({ id, name })}>
         <Link to={`/character/${currentData.id}/${currentData.name}`}>
           <Button desc="Read more" />
         </Link>

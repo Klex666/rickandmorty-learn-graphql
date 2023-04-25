@@ -20,8 +20,6 @@ export const ALL_CHARACTERS = gql`
 export const ONE_CHARACTER = gql`
   query oneCharacter($id: ID!) {
     character(id: $id) {
-      id
-      name
       status
       species
       type
